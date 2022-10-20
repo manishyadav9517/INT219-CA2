@@ -35,3 +35,32 @@ function remove_duplicates() {
         ptr1 = ptr1.next;
     }
 }
+
+function printList() {
+    let node = head;
+    console.log("in print list: ", node.data);
+    let values = [];
+    while (node != null) {
+        values.push(node.data);
+        console.log(node.data);
+        node = node.next;
+    }
+    return values;
+}
+
+function build_nodes(values) {
+    let dummy = new Node(-1); // dummy node
+
+    let trimmedValues = [];
+    let head1 = dummy;
+    for (let val of values) {
+        if(val != '') {
+            head1.next = new Node(val);
+            head1 = head1.next;
+
+            trimmedValues.push(val);
+        }
+    }
+    head = dummy.next;
+    return trimmedValues;
+}
