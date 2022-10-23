@@ -64,3 +64,30 @@ function build_nodes(values) {
     head = dummy.next;
     return trimmedValues;
 }
+
+function build_n_remove() {
+    let values = document.getElementById("data").value;
+    values = values.trim().split(" ");
+    if(values[0] == '') return;
+
+    values = build_nodes(values);
+    // console.log('after build nodes: ', head.data);
+
+    document.getElementById("op_txt").innerHTML =
+        "Linked List before removing duplicates :";
+    
+    document.getElementById("op").innerHTML = (values + "").split(',').join(',  ');
+    document.getElementById("final_op_txt").innerHTML =
+        "Linked List after removing duplicates :";
+    remove_duplicates();
+
+    let ans = printList() + "";
+    ans = ans.split(",").join(",  ");
+
+    console.log(typeof ans);
+    document.getElementById("final_op").innerHTML = ans;
+    document.getElementById('thanks').innerHTML = "Thank You For Using My Web-App";
+    document.getElementsByClassName('container')[0].style.transform = 'skew(0deg, -12deg)';
+    document.getElementsByClassName('container')[0].style.marginTop = '5%';
+    document.getElementsByClassName('container')[0].style.width = '50%';
+}
