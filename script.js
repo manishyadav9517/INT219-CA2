@@ -91,3 +91,16 @@ function build_n_remove() {
     document.getElementsByClassName('container')[0].style.marginTop = '5%';
     document.getElementsByClassName('container')[0].style.width = '50%';
 }
+
+function reset() {
+    document.getElementById("data").value = "";
+    document.getElementById("op_txt").innerHTML = "";
+    document.getElementById("op").innerHTML = "";
+    document.getElementById("final_op_txt").innerHTML = "";
+    document.getElementById("final_op").innerHTML = "";
+    document.getElementById('thanks').innerHTML = "";
+
+    document.getElementsByClassName('container')[0].style.transform = 'skew(0deg, 0deg)';
+    document.getElementsByClassName('container')[0].style.marginTop = 'auto';
+    document.getElementsByClassName('container')[0].style.width = '70%';
+}
