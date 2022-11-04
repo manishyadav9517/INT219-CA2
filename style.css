@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@1&family=Italiana&family=Patrick+Hand&family=Roboto+Slab:wght@500&display=swap');
 
 body {
-    background-image: linear-gradient(102.4deg, rgba(253, 189, 85, 1) 7.8%, rgba(249, 131, 255, 1) 100.3%);
+    background: rgb(193,255,247);
+background: radial-gradient(circle, rgba(193,255,247,1) 0%, rgba(39,86,108,1) 27%, rgba(229,201,247,1) 49%, rgba(122,179,217,1) 72%, rgba(198,255,253,1) 100%);
     /* font-family: 'Alumni Sans Pinstripe', sans-serif; */
     font-family: 'Italiana', serif;
     /* font-family: 'Roboto Slab', serif; */
